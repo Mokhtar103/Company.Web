@@ -1,22 +1,19 @@
 ﻿using Company.Data.Entites;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Company.Service.Interfaces.Department.Dto;
+
 
 namespace Company.Service.Interfaces
 {
     public interface IDepartmentService
     {
-        Department GetById(int? id);
+        DepartmentDto GetById(int? id);
 
-        IEnumerable<Department> GetAll();
+        IEnumerable<DepartmentDto> GetAll();
 
-        void Add(Department department);
+        void Add(DepartmentDto department);
 
-        void Update(Department department);
+        void Update(DepartmentDto department);
 
-        void Delete(Department department);
+        void Delete(DepartmentDto department);
     }
 }
