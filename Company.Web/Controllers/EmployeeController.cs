@@ -17,7 +17,6 @@ namespace Company.Web.Controllers
             _departmentService = departmentService;
         }
 
-		[HttpGet]
 		public IActionResult Index(string searchInp)
 		{
 			IEnumerable<EmployeeDto> employees = new List<EmployeeDto>();
